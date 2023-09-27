@@ -1,0 +1,8 @@
+book = Book.query.all()
+if book:
+    # response_dict = book.to_dict()
+    response_dict = {
+        "title": book.name,
+        "id": book.id,
+        "author": book.authors,
+    }
